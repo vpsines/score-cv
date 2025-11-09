@@ -1,94 +1,94 @@
 export const resumes: Resume[] = [
-    {
-        id: "1",
-        companyName: "Google",
-        jobTitle: "Frontend Developer",
-        imagePath: "/images/resume-1.png",
-        resumePath: "/resumes/resume-1.pdf",
-        feedback: {
-            overallScore: 85,
-            ATS: {
-                score: 90,
-                tips: [],
-            },
-            toneAndStyle: {
-                score: 90,
-                tips: [],
-            },
-            content: {
-                score: 90,
-                tips: [],
-            },
-            structure: {
-                score: 90,
-                tips: [],
-            },
-            skills: {
-                score: 90,
-                tips: [],
-            },
-        },
+  {
+    id: "1",
+    companyName: "Google",
+    jobTitle: "Frontend Developer",
+    imagePath: "/images/resume-1.png",
+    resumePath: "/resumes/resume-1.pdf",
+    feedback: {
+      overallScore: 85,
+      ATS: {
+        score: 90,
+        tips: [],
+      },
+      toneAndStyle: {
+        score: 90,
+        tips: [],
+      },
+      content: {
+        score: 90,
+        tips: [],
+      },
+      structure: {
+        score: 90,
+        tips: [],
+      },
+      skills: {
+        score: 90,
+        tips: [],
+      },
     },
-    {
-        id: "2",
-        companyName: "Microsoft",
-        jobTitle: "Cloud Engineer",
-        imagePath: "/images/resume-2.png",
-        resumePath: "/resumes/resume-2.pdf",
-        feedback: {
-            overallScore: 55,
-            ATS: {
-                score: 90,
-                tips: [],
-            },
-            toneAndStyle: {
-                score: 90,
-                tips: [],
-            },
-            content: {
-                score: 90,
-                tips: [],
-            },
-            structure: {
-                score: 90,
-                tips: [],
-            },
-            skills: {
-                score: 90,
-                tips: [],
-            },
-        },
+  },
+  {
+    id: "2",
+    companyName: "Microsoft",
+    jobTitle: "Cloud Engineer",
+    imagePath: "/images/resume-2.png",
+    resumePath: "/resumes/resume-2.pdf",
+    feedback: {
+      overallScore: 55,
+      ATS: {
+        score: 90,
+        tips: [],
+      },
+      toneAndStyle: {
+        score: 90,
+        tips: [],
+      },
+      content: {
+        score: 90,
+        tips: [],
+      },
+      structure: {
+        score: 90,
+        tips: [],
+      },
+      skills: {
+        score: 90,
+        tips: [],
+      },
     },
-    {
-        id: "3",
-        companyName: "Apple",
-        jobTitle: "iOS Developer",
-        imagePath: "/images/resume-3.png",
-        resumePath: "/resumes/resume-3.pdf",
-        feedback: {
-            overallScore: 75,
-            ATS: {
-                score: 90,
-                tips: [],
-            },
-            toneAndStyle: {
-                score: 90,
-                tips: [],
-            },
-            content: {
-                score: 90,
-                tips: [],
-            },
-            structure: {
-                score: 90,
-                tips: [],
-            },
-            skills: {
-                score: 90,
-                tips: [],
-            },
-        },
+  },
+  {
+    id: "3",
+    companyName: "Apple",
+    jobTitle: "iOS Developer",
+    imagePath: "/images/resume-3.png",
+    resumePath: "/resumes/resume-3.pdf",
+    feedback: {
+      overallScore: 75,
+      ATS: {
+        score: 90,
+        tips: [],
+      },
+      toneAndStyle: {
+        score: 90,
+        tips: [],
+      },
+      content: {
+        score: 90,
+        tips: [],
+      },
+      structure: {
+        score: 90,
+        tips: [],
+      },
+      skills: {
+        score: 90,
+        tips: [],
+      },
     },
+  },
 ];
 
 export const AIResponseFormat = `
@@ -136,15 +136,13 @@ export const AIResponseFormat = `
     }`;
 
 export const prepareInstructions = ({
-                                        jobTitle,
-                                        jobDescription,
-                                        AIResponseFormat,
-                                    }: {
-    jobTitle: string;
-    jobDescription: string;
-    AIResponseFormat: string;
+  jobTitle,
+  jobDescription,
+}: {
+  jobTitle: string;
+  jobDescription: string;
 }) =>
-    `You are an expert in ATS (Applicant Tracking System) and resume analysis.
+  `You are an expert in ATS (Applicant Tracking System) and resume analysis.
   Please analyze and rate this resume and suggest how to improve it.
   The rating can be low if the resume is bad.
   Be thorough and detailed. Don't be afraid to point out any mistakes or areas for improvement.
